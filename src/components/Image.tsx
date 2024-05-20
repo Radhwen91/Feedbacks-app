@@ -9,7 +9,7 @@ function Image({ feedback }: ImageProps ) {
                     <img className="w-24 h-24 mb-3 rounded-full shadow-lg" src={feedback.photo}/>
                 </div>
                 <div className={feedback.cardStyle}>
-                    <div className="flex text-yellow-500 mb-4 ">
+                    <div className="flex text-amber-500 mb-4 ">
                         {Array(feedback.rating).fill(0).map((_, i) => (
                             <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
                                 <path
@@ -17,7 +17,7 @@ function Image({ feedback }: ImageProps ) {
                             </svg>
                         ))}
                     </div>
-                    <div className="max-w-sm bg-amber-300 rounded-lg drop-shadow-2xl overflow-hidden ">
+                    <div className="max-w-sm bg-amber-300 rounded-lg shadow-[10px_10px_rgba(0,0,0,1)] overflow-hidden ">
                         <div className="p-4">
                             <p className="mt-2 text-black-600">{feedback.description}</p>
                         </div>
